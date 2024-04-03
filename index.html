@@ -9,9 +9,19 @@
         *{
             padding: 0px;
         }
+        /* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
     </style>
 </head>
 <body>
-    <embed style="height: 100vw; width: 100vw;" src="AvanaMenu.pdf#toolbar=0" frameborder="0"></embed>
+    <embed class="example" style="height: 100vw; width: 100vw;" src="AvanaMenu.pdf#toolbar=0" frameborder="0"></embed>
 </body>
 </html>
